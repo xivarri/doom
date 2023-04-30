@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: google_TEST
+# uuid: google_TEST
+# key: gts
+# group: testing
+# --
+TEST(${1:suite}, ${2:test_name}) {
+  $0
+}

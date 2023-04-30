@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: cc_test
+# uuid: cc_test
+# key: cct
+# --
+cc_test(
+    name = "${1:name}_test",
+    srcs = ["$1_test.cc"],
+    deps = [
+         ":$1",
+         "@googletest//:gtest",
+         "@googletest//:gtest_main",
+         $0
+    ]
+)

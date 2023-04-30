@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: benchmark
+# uuid: benchmark
+# key: bm
+# group: testing
+# --
+static void BM_${1:Name}(benchmark::State &state) {
+  $0
+  for (auto _ : state) {
+
+  }
+}
+
+BENCHMARK(BM_$1);

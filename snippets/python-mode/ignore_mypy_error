@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ignore_mypy_error
+# uuid: ignore_mypy_error
+# key: mig
+# condition: t
+# --
+# type: ignore[$0]
